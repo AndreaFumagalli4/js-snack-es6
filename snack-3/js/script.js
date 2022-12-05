@@ -64,8 +64,11 @@ console.log(zucchine);
 
 let weight = 0;
 
+let media;
+
 for ( let i = 0; i < zucchine.length; i++) {
     weight += zucchine[i].peso;
+    media = weight / zucchine.length;
 }
 
-console.log(weight);
+console.log(weight, media);
