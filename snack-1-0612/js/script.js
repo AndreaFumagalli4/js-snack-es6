@@ -35,7 +35,7 @@ console.log(animaliMammiferi);
 
 const nuoviMammiferi = animaliMammiferi.map( (animaliMammiferi) => {
     animaliMammiferi.nome = animaliMammiferi.nome.charAt(0) + animaliMammiferi.nome.substring(1).toUpperCase();
-
+    
     return animaliMammiferi;
 });
 
