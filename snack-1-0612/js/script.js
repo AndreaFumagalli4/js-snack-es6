@@ -21,7 +21,7 @@ const animali = [
     { nome: 'struzzo', famiglia: 'Struthionidae', classe: 'uccelli' },
     { nome: 'cobra', famiglia: 'elapidae', classe: 'rettili' },
     { nome: 'zebra', famiglia: 'equidi', classe: 'mammiferi' },
-    { nome: 'anaconda', famiglia: 'boidi', classe: 'rettili' },
+    { nome: 'anaconda', famiglia: 'boidi', classe: 'rettili' }
 ];
 
 const animaliMammiferi = animali.filter((animale) => {
@@ -32,3 +32,11 @@ const animaliMammiferi = animali.filter((animale) => {
 });
 
 console.log(animaliMammiferi);
+
+const nuoviMammiferi = animaliMammiferi.map( (animaliMammiferi) => {
+    animaliMammiferi.nome = animaliMammiferi.nome.charAt(0) + animaliMammiferi.nome.substring(1).toUpperCase();
+
+    return animaliMammiferi;
+});
+
+console.log(nuoviMammiferi);
